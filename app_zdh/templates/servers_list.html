@@ -1,0 +1,70 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf8" />
+<style>
+body
+{
+background-color:#b0c4de
+}
+ul.b {list-style-type:square;}
+table, td, th
+{
+border:1px solid green;
+}
+th
+{
+background-color:green;
+text-align:right;
+color:white;
+}
+td
+{
+text-align:right;
+}
+li{display:inline;}
+</style>
+<script>
+function validateForm()
+{
+var x=document.forms["myForm"]["name"].value;
+if (x==null || x=="")
+  {
+  alert("host必须填写");
+  return false;
+  }
+}
+</script>
+</head>
+<body>
+<h1>13MySQL实例列表</h1>
+</table>
+<li><a href="http://10.1.192.55:8000/add_server">添加</a></li>
+<li><a href="http://192.168.3.3:8000/terminal_list">删除</a></li>
+<li><a href="http://10.1.192.55:8000">返回主页</a></li>
+<form name="myForm" action="/servers_fiter" onsubmit="return validateForm()" method="get">host：
+        <input type="text" name="name">
+        <input type="submit" value="查询">
+</form>
+<table terminal="mysql">
+<tr>
+<th>host</th>
+<th>port</th>
+<th>username</th>
+<th>status</th>
+<th>createtime</th>
+</tr>
+{% for item in servers %}
+<ul class="b">
+<tr>
+<td>{{ item.host }}</td>
+<td>{{ item.port }}</td>
+<td>{{ item.username }}</td>
+<td>{{ item.is_delete }}</td>
+<td>{{ item.create_time|date:"c" }}</td>
+
+</tr>
+</ul>
+{% endfor %}
+</table>
+</body>
+</html>

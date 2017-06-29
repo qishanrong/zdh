@@ -1,0 +1,21 @@
+<html>
+<head>
+<style>
+body
+{
+background-image:url('/static/login.jpg');
+background-repeat:repeat-x;
+</style>
+<meta charset="utf-8">
+<title>登陆界面</title>
+</head>
+<body>
+<from>
+用户名：<input type="text" name="用户名" >
+<hr>
+密码：<input type="password" name="密码">
+</from>
+<input type="submit" value="登陆">
+</body>
+</html>
+
