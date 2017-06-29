@@ -69,6 +69,7 @@ def grant_user2(request):
 		os.system("/usr/bin/ansible \"%s\" -m shell -a \"%s\""%(host,execone))
 		exectwo="python /zdh/zdh/app_zdh/include/mysql_fun.py \\\"%s\\\" \\\"%s\\\" \\\"%s\\\" \\\"%s\\\" \\\"flush privileges\\\""%(host,port,username,password)
 		os.system("/usr/bin/ansible \"%s\" -m shell -a \"%s\""%(host,exectwo))
+		return render(request,'success.html')
 	else :
 		return host
 
