@@ -26,7 +26,7 @@ SECRET_KEY = '5d+=)#jm=6efcnkwzh2%vw(46&a^c*295#-9^!*+^xm4+y9!j@'
 DEBUG = True
 
 
-ALLOWED_HOSTS = ["10.1.192.37"]
+ALLOWED_HOSTS = ["192.168.56.2"]
 
 
 # Application definition
