@@ -25,4 +25,6 @@ urlpatterns = [
     url(r'^add/','app_zdh.views.add'),
     url(r'^grant_user/','app_zdh.views.grant_user'),
     url(r'^grant_add/','app_zdh.views.grant_user2'),
+    url(r'^backup/','app_zdh.views.backup'),
+    url(r'^full_backup/','app_zdh.views.full_backup'),
 ]

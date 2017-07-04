@@ -1,0 +1,657 @@
+10.1.192.55 | SUCCESS | rc=0 >>
+success
+2017-06-29_10-47-44 binlog.000009 11820 588859c7-5724-11e7-906e-080027359285:1-10104170629 10:47:44 innobackupex: Starting the backup operation
+
+IMPORTANT: Please check that the backup run completes successfully.
+           At the end of a successful backup run innobackupex
+           prints "completed OK!".
+
+170629 10:47:44  version_check Connecting to MySQL server with DSN 'dbi:mysql:;mysql_read_default_group=xtrabackup;mysql_socket=/tmp/mysql.sock' as 'root'  (using password: YES).
+170629 10:47:44  version_check Connected to MySQL server
+170629 10:47:44  version_check Executing a version check against the server...
+170629 10:47:44  version_check Done.
+170629 10:47:44 Connecting to MySQL server host: localhost, user: root, password: set, port: not set, socket: /tmp/mysql.sock
+Using server version 5.6.36-log
+innobackupex version 2.4.6 based on MySQL server 5.7.13 Linux (x86_64) (revision id: 8ec05b7)
+xtrabackup: uses posix_fadvise().
+xtrabackup: cd to /home/mysql/mysql3306/data
+xtrabackup: open files limit requested 0, set to 1024
+xtrabackup: using the following InnoDB configuration:
+xtrabackup:   innodb_data_home_dir = .
+xtrabackup:   innodb_data_file_path = ibdata1:12M:autoextend
+xtrabackup:   innodb_log_group_home_dir = ./
+xtrabackup:   innodb_log_files_in_group = 2
+xtrabackup:   innodb_log_file_size = 50331648
+InnoDB: Number of pools: 1
+170629 10:47:44 >> log scanned up to (1381248759)
+xtrabackup: Generating a list of tablespaces
+InnoDB: Allocated tablespace ID 132 for lepus/admin_log, old maximum was 0
+170629 10:47:44 [01] Copying ./ibdata1 to /home/backup/2017-06-29_10-47-44/ibdata1
+170629 10:47:45 >> log scanned up to (1381248759)
+170629 10:47:45 [01]        ...done
+170629 10:47:45 [01] Copying ./lepus/admin_log.ibd to /home/backup/2017-06-29_10-47-44/lepus/admin_log.ibd
+170629 10:47:45 [01]        ...done
+170629 10:47:45 [01] Copying ./lepus/mysql_slow_query_review_history.ibd to /home/backup/2017-06-29_10-47-44/lepus/mysql_slow_query_review_history.ibd
+170629 10:47:45 [01]        ...done
+170629 10:47:45 [01] Copying ./lepus/mysql_slow_query_review.ibd to /home/backup/2017-06-29_10-47-44/lepus/mysql_slow_query_review.ibd
+170629 10:47:45 [01]        ...done
+170629 10:47:45 [01] Copying ./lepus/mysql_connected.ibd to /home/backup/2017-06-29_10-47-44/lepus/mysql_connected.ibd
+170629 10:47:45 [01]        ...done
+170629 10:47:45 [01] Copying ./lepus/os_diskio_history.ibd to /home/backup/2017-06-29_10-47-44/lepus/os_diskio_history.ibd
+170629 10:47:45 [01]        ...done
+170629 10:47:45 [01] Copying ./lepus/redis_status_history.ibd to /home/backup/2017-06-29_10-47-44/lepus/redis_status_history.ibd
+170629 10:47:45 [01]        ...done
+170629 10:47:45 [01] Copying ./lepus/options.ibd to /home/backup/2017-06-29_10-47-44/lepus/options.ibd
+170629 10:47:45 [01]        ...done
+170629 10:47:45 [01] Copying ./lepus/admin_user.ibd to /home/backup/2017-06-29_10-47-44/lepus/admin_user.ibd
+170629 10:47:45 [01]        ...done
+170629 10:47:45 [01] Copying ./lepus/mongodb_status_history.ibd to /home/backup/2017-06-29_10-47-44/lepus/mongodb_status_history.ibd
+170629 10:47:45 [01]        ...done
+170629 10:47:45 [01] Copying ./lepus/backup_record.ibd to /home/backup/2017-06-29_10-47-44/lepus/backup_record.ibd
+170629 10:47:45 [01]        ...done
+170629 10:47:45 [01] Copying ./lepus/redis_status.ibd to /home/backup/2017-06-29_10-47-44/lepus/redis_status.ibd
+170629 10:47:45 [01]        ...done
+170629 10:47:45 [01] Copying ./lepus/db_status.ibd to /home/backup/2017-06-29_10-47-44/lepus/db_status.ibd
+170629 10:47:45 [01]        ...done
+170629 10:47:45 [01] Copying ./lepus/admin_privilege.ibd to /home/backup/2017-06-29_10-47-44/lepus/admin_privilege.ibd
+170629 10:47:45 [01]        ...done
+170629 10:47:45 [01] Copying ./lepus/os_net_history.ibd to /home/backup/2017-06-29_10-47-44/lepus/os_net_history.ibd
+170629 10:47:45 [01]        ...done
+170629 10:47:45 [01] Copying ./lepus/os_disk_history.ibd to /home/backup/2017-06-29_10-47-44/lepus/os_disk_history.ibd
+170629 10:47:45 [01]        ...done
+170629 10:47:46 [01] Copying ./lepus/os_status_history.ibd to /home/backup/2017-06-29_10-47-44/lepus/os_status_history.ibd
+170629 10:47:46 [01]        ...done
+170629 10:47:46 [01] Copying ./lepus/mysql_replication.ibd to /home/backup/2017-06-29_10-47-44/lepus/mysql_replication.ibd
+170629 10:47:46 [01]        ...done
+170629 10:47:46 [01] Copying ./lepus/oracle_tablespace.ibd to /home/backup/2017-06-29_10-47-44/lepus/oracle_tablespace.ibd
+170629 10:47:46 [01]        ...done
+170629 10:47:46 [01] Copying ./lepus/mysql_slow_query_sendmail_log.ibd to /home/backup/2017-06-29_10-47-44/lepus/mysql_slow_query_sendmail_log.ibd
+170629 10:47:46 [01]        ...done
+170629 10:47:46 [01] Copying ./lepus/mongodb_status.ibd to /home/backup/2017-06-29_10-47-44/lepus/mongodb_status.ibd
+170629 10:47:46 [01]        ...done
+170629 10:47:46 [01] Copying ./lepus/db_servers_redis.ibd to /home/backup/2017-06-29_10-47-44/lepus/db_servers_redis.ibd
+170629 10:47:46 [01]        ...done
+170629 10:47:46 [01] Copying ./lepus/django_migrations.ibd to /home/backup/2017-06-29_10-47-44/lepus/django_migrations.ibd
+170629 10:47:46 [01]        ...done
+170629 10:47:46 [01] Copying ./lepus/oracle_status.ibd to /home/backup/2017-06-29_10-47-44/lepus/oracle_status.ibd
+170629 10:47:46 [01]        ...done
+170629 10:47:46 [01] Copying ./lepus/os_diskio.ibd to /home/backup/2017-06-29_10-47-44/lepus/os_diskio.ibd
+170629 10:47:46 [01]        ...done
+170629 10:47:46 [01] Copying ./lepus/db_servers_mongodb.ibd to /home/backup/2017-06-29_10-47-44/lepus/db_servers_mongodb.ibd
+170629 10:47:46 [01]        ...done
+170629 10:47:46 [01] Copying ./lepus/admin_role_privilege.ibd to /home/backup/2017-06-29_10-47-44/lepus/admin_role_privilege.ibd
+170629 10:47:46 [01]        ...done
+170629 10:47:46 [01] Copying ./lepus/os_net.ibd to /home/backup/2017-06-29_10-47-44/lepus/os_net.ibd
+170629 10:47:46 [01]        ...done
+170629 10:47:46 [01] Copying ./lepus/os_disk.ibd to /home/backup/2017-06-29_10-47-44/lepus/os_disk.ibd
+170629 10:47:46 [01]        ...done
+170629 10:47:46 [01] Copying ./lepus/mysql_bigtable_history.ibd to /home/backup/2017-06-29_10-47-44/lepus/mysql_bigtable_history.ibd
+170629 10:47:46 [01]        ...done
+170629 10:47:46 [01] Copying ./lepus/admin_menu.ibd to /home/backup/2017-06-29_10-47-44/lepus/admin_menu.ibd
+170629 10:47:46 [01]        ...done
+170629 10:47:46 [01] Copying ./lepus/os_status.ibd to /home/backup/2017-06-29_10-47-44/lepus/os_status.ibd
+170629 10:47:46 [01]        ...done
+170629 10:47:46 >> log scanned up to (1381248759)
+170629 10:47:46 [01] Copying ./lepus/admin_user_role.ibd to /home/backup/2017-06-29_10-47-44/lepus/admin_user_role.ibd
+170629 10:47:46 [01]        ...done
+170629 10:47:46 [01] Copying ./lepus/redis_replication_history.ibd to /home/backup/2017-06-29_10-47-44/lepus/redis_replication_history.ibd
+170629 10:47:46 [01]        ...done
+170629 10:47:46 [01] Copying ./lepus/oracle_tablespace_history.ibd to /home/backup/2017-06-29_10-47-44/lepus/oracle_tablespace_history.ibd
+170629 10:47:46 [01]        ...done
+170629 10:47:46 [01] Copying ./lepus/db_servers_mysql.ibd to /home/backup/2017-06-29_10-47-44/lepus/db_servers_mysql.ibd
+170629 10:47:46 [01]        ...done
+170629 10:47:46 [01] Copying ./lepus/admin_role.ibd to /home/backup/2017-06-29_10-47-44/lepus/admin_role.ibd
+170629 10:47:46 [01]        ...done
+170629 10:47:46 [01] Copying ./lepus/lepus_status.ibd to /home/backup/2017-06-29_10-47-44/lepus/lepus_status.ibd
+170629 10:47:46 [01]        ...done
+170629 10:47:46 [01] Copying ./lepus/oracle_status_history.ibd to /home/backup/2017-06-29_10-47-44/lepus/oracle_status_history.ibd
+170629 10:47:46 [01]        ...done
+170629 10:47:46 [01] Copying ./lepus/mysql_status.ibd to /home/backup/2017-06-29_10-47-44/lepus/mysql_status.ibd
+170629 10:47:46 [01]        ...done
+170629 10:47:46 [01] Copying ./lepus/redis_replication.ibd to /home/backup/2017-06-29_10-47-44/lepus/redis_replication.ibd
+170629 10:47:46 [01]        ...done
+170629 10:47:46 [01] Copying ./lepus/alarm_history.ibd to /home/backup/2017-06-29_10-47-44/lepus/alarm_history.ibd
+170629 10:47:46 [01]        ...done
+170629 10:47:46 [01] Copying ./lepus/db_servers_os.ibd to /home/backup/2017-06-29_10-47-44/lepus/db_servers_os.ibd
+170629 10:47:46 [01]        ...done
+170629 10:47:46 [01] Copying ./lepus/mysql_processlist.ibd to /home/backup/2017-06-29_10-47-44/lepus/mysql_processlist.ibd
+170629 10:47:46 [01]        ...done
+170629 10:47:46 [01] Copying ./lepus/mysql_status_history.ibd to /home/backup/2017-06-29_10-47-44/lepus/mysql_status_history.ibd
+170629 10:47:46 [01]        ...done
+170629 10:47:46 [01] Copying ./lepus/mysql_bigtable.ibd to /home/backup/2017-06-29_10-47-44/lepus/mysql_bigtable.ibd
+170629 10:47:46 [01]        ...done
+170629 10:47:46 [01] Copying ./lepus/alarm_temp.ibd to /home/backup/2017-06-29_10-47-44/lepus/alarm_temp.ibd
+170629 10:47:46 [01]        ...done
+170629 10:47:46 [01] Copying ./lepus/mysql_replication_history.ibd to /home/backup/2017-06-29_10-47-44/lepus/mysql_replication_history.ibd
+170629 10:47:46 [01]        ...done
+170629 10:47:46 [01] Copying ./lepus/db_servers_oracle.ibd to /home/backup/2017-06-29_10-47-44/lepus/db_servers_oracle.ibd
+170629 10:47:46 [01]        ...done
+170629 10:47:46 [01] Copying ./lepus/alarm.ibd to /home/backup/2017-06-29_10-47-44/lepus/alarm.ibd
+170629 10:47:46 [01]        ...done
+170629 10:47:46 [01] Copying ./mysql/innodb_table_stats.ibd to /home/backup/2017-06-29_10-47-44/mysql/innodb_table_stats.ibd
+170629 10:47:46 [01]        ...done
+170629 10:47:46 [01] Copying ./mysql/slave_master_info.ibd to /home/backup/2017-06-29_10-47-44/mysql/slave_master_info.ibd
+170629 10:47:46 [01]        ...done
+170629 10:47:46 [01] Copying ./mysql/slave_worker_info.ibd to /home/backup/2017-06-29_10-47-44/mysql/slave_worker_info.ibd
+170629 10:47:46 [01]        ...done
+170629 10:47:46 [01] Copying ./mysql/slave_relay_log_info.ibd to /home/backup/2017-06-29_10-47-44/mysql/slave_relay_log_info.ibd
+170629 10:47:46 [01]        ...done
+170629 10:47:46 [01] Copying ./mysql/innodb_index_stats.ibd to /home/backup/2017-06-29_10-47-44/mysql/innodb_index_stats.ibd
+170629 10:47:46 [01]        ...done
+170629 10:47:46 [01] Copying ./bigdata/admin_user.ibd to /home/backup/2017-06-29_10-47-44/bigdata/admin_user.ibd
+170629 10:47:46 [01]        ...done
+170629 10:47:46 [01] Copying ./bigdata/admin_menu.ibd to /home/backup/2017-06-29_10-47-44/bigdata/admin_menu.ibd
+170629 10:47:46 [01]        ...done
+170629 10:47:46 [01] Copying ./bigdata/admin_menu_pid.ibd to /home/backup/2017-06-29_10-47-44/bigdata/admin_menu_pid.ibd
+170629 10:47:46 [01]        ...done
+170629 10:47:46 [01] Copying ./bigdata/admin_navigation.ibd to /home/backup/2017-06-29_10-47-44/bigdata/admin_navigation.ibd
+170629 10:47:46 [01]        ...done
+170629 10:47:46 [01] Copying ./bigdata/admin_menu_copy4.ibd to /home/backup/2017-06-29_10-47-44/bigdata/admin_menu_copy4.ibd
+170629 10:47:46 [01]        ...done
+170629 10:47:46 [01] Copying ./bigdata/admin_menu_copy2.ibd to /home/backup/2017-06-29_10-47-44/bigdata/admin_menu_copy2.ibd
+170629 10:47:46 [01]        ...done
+170629 10:47:46 [01] Copying ./bigdata/admin_menu_copy3.ibd to /home/backup/2017-06-29_10-47-44/bigdata/admin_menu_copy3.ibd
+170629 10:47:46 [01]        ...done
+170629 10:47:46 [01] Copying ./bigdata/admin_menu_copy.ibd to /home/backup/2017-06-29_10-47-44/bigdata/admin_menu_copy.ibd
+170629 10:47:46 [01]        ...done
+170629 10:47:46 [01] Copying ./test/test.ibd to /home/backup/2017-06-29_10-47-44/test/test.ibd
+170629 10:47:46 [01]        ...done
+170629 10:47:46 [01] Copying ./test/test1.ibd to /home/backup/2017-06-29_10-47-44/test/test1.ibd
+170629 10:47:46 [01]        ...done
+170629 10:47:46 [01] Copying ./clickWeight/extend_query.ibd to /home/backup/2017-06-29_10-47-44/clickWeight/extend_query.ibd
+170629 10:47:46 [01]        ...done
+170629 10:47:46 [01] Copying ./clickWeight/landmark.ibd to /home/backup/2017-06-29_10-47-44/clickWeight/landmark.ibd
+170629 10:47:47 >> log scanned up to (1381248759)
+170629 10:47:47 [01]        ...done
+170629 10:47:47 [01] Copying ./clickWeight/extsearch_chain_names.ibd to /home/backup/2017-06-29_10-47-44/clickWeight/extsearch_chain_names.ibd
+170629 10:47:47 [01]        ...done
+170629 10:47:47 [01] Copying ./clickWeight/query_handle_weight_bak.ibd to /home/backup/2017-06-29_10-47-44/clickWeight/query_handle_weight_bak.ibd
+170629 10:47:48 >> log scanned up to (1381248759)
+170629 10:47:49 >> log scanned up to (1381248759)
+170629 10:47:50 >> log scanned up to (1381248759)
+170629 10:47:51 >> log scanned up to (1381248759)
+170629 10:47:52 >> log scanned up to (1381248759)
+170629 10:47:53 >> log scanned up to (1381248759)
+170629 10:47:53 [01]        ...done
+170629 10:47:53 [01] Copying ./clickWeight/query_handle_weight.ibd to /home/backup/2017-06-29_10-47-44/clickWeight/query_handle_weight.ibd
+170629 10:47:54 >> log scanned up to (1381248759)
+170629 10:47:55 >> log scanned up to (1381248759)
+170629 10:47:56 >> log scanned up to (1381248759)
+170629 10:47:57 >> log scanned up to (1381248759)
+170629 10:47:58 >> log scanned up to (1381248759)
+170629 10:47:59 >> log scanned up to (1381248759)
+170629 10:48:00 >> log scanned up to (1381248759)
+170629 10:48:01 >> log scanned up to (1381248759)
+170629 10:48:02 >> log scanned up to (1381248759)
+170629 10:48:03 >> log scanned up to (1381248759)
+170629 10:48:04 >> log scanned up to (1381248759)
+170629 10:48:05 >> log scanned up to (1381248759)
+170629 10:48:06 >> log scanned up to (1381248759)
+170629 10:48:07 >> log scanned up to (1381248759)
+170629 10:48:07 [01]        ...done
+170629 10:48:07 [01] Copying ./clickWeight/clickWeight_incre.ibd to /home/backup/2017-06-29_10-47-44/clickWeight/clickWeight_incre.ibd
+170629 10:48:07 [01]        ...done
+170629 10:48:07 [01] Copying ./clickWeight/clickWeight.ibd to /home/backup/2017-06-29_10-47-44/clickWeight/clickWeight.ibd
+170629 10:48:08 >> log scanned up to (1381248759)
+170629 10:48:09 >> log scanned up to (1381248759)
+170629 10:48:09 [01]        ...done
+170629 10:48:10 [01] Copying ./clickWeight/query_handle_weight_old.ibd to /home/backup/2017-06-29_10-47-44/clickWeight/query_handle_weight_old.ibd
+170629 10:48:10 >> log scanned up to (1381248759)
+170629 10:48:10 [01]        ...done
+170629 10:48:10 [01] Copying ./clickWeight/correct.ibd to /home/backup/2017-06-29_10-47-44/clickWeight/correct.ibd
+170629 10:48:11 >> log scanned up to (1381248759)
+170629 10:48:12 >> log scanned up to (1381248759)
+170629 10:48:13 >> log scanned up to (1381248759)
+170629 10:48:13 [01]        ...done
+170629 10:48:13 [01] Copying ./clickWeight/extsearch_cookedfood.ibd to /home/backup/2017-06-29_10-47-44/clickWeight/extsearch_cookedfood.ibd
+170629 10:48:13 [01]        ...done
+170629 10:48:13 [01] Copying ./clickWeight/extsearch_synonym.ibd to /home/backup/2017-06-29_10-47-44/clickWeight/extsearch_synonym.ibd
+170629 10:48:13 [01]        ...done
+170629 10:48:13 [01] Copying ./clickWeight/extsearch_type.ibd to /home/backup/2017-06-29_10-47-44/clickWeight/extsearch_type.ibd
+170629 10:48:13 [01]        ...done
+170629 10:48:13 [01] Copying ./clickWeight/clickWeight_log.ibd to /home/backup/2017-06-29_10-47-44/clickWeight/clickWeight_log.ibd
+170629 10:48:13 [01]        ...done
+170629 10:48:13 [01] Copying ./clickWeight/area.ibd to /home/backup/2017-06-29_10-47-44/clickWeight/area.ibd
+170629 10:48:13 [01]        ...done
+170629 10:48:13 [01] Copying ./clickWeight/extsearch_type_synonym.ibd to /home/backup/2017-06-29_10-47-44/clickWeight/extsearch_type_synonym.ibd
+170629 10:48:13 [01]        ...done
+170629 10:48:13 Executing FLUSH NO_WRITE_TO_BINLOG TABLES...
+170629 10:48:13 Executing FLUSH TABLES WITH READ LOCK...
+170629 10:48:13 Starting to backup non-InnoDB tables and files
+170629 10:48:13 [01] Copying ./lepus/mysql_slow_query_review_history.frm to /home/backup/2017-06-29_10-47-44/lepus/mysql_slow_query_review_history.frm
+170629 10:48:13 [01]        ...done
+170629 10:48:13 [01] Copying ./lepus/db_servers_mysql.frm to /home/backup/2017-06-29_10-47-44/lepus/db_servers_mysql.frm
+170629 10:48:13 [01]        ...done
+170629 10:48:13 [01] Copying ./lepus/admin_menu.frm to /home/backup/2017-06-29_10-47-44/lepus/admin_menu.frm
+170629 10:48:13 [01]        ...done
+170629 10:48:13 [01] Copying ./lepus/oracle_status_history.frm to /home/backup/2017-06-29_10-47-44/lepus/oracle_status_history.frm
+170629 10:48:13 [01]        ...done
+170629 10:48:13 [01] Copying ./lepus/lepus_status.frm to /home/backup/2017-06-29_10-47-44/lepus/lepus_status.frm
+170629 10:48:13 [01]        ...done
+170629 10:48:13 [01] Copying ./lepus/admin_role.frm to /home/backup/2017-06-29_10-47-44/lepus/admin_role.frm
+170629 10:48:13 [01]        ...done
+170629 10:48:13 [01] Copying ./lepus/mysql_bigtable.frm to /home/backup/2017-06-29_10-47-44/lepus/mysql_bigtable.frm
+170629 10:48:13 [01]        ...done
+170629 10:48:13 [01] Copying ./lepus/admin_privilege.frm to /home/backup/2017-06-29_10-47-44/lepus/admin_privilege.frm
+170629 10:48:13 [01]        ...done
+170629 10:48:13 [01] Copying ./lepus/admin_user.frm to /home/backup/2017-06-29_10-47-44/lepus/admin_user.frm
+170629 10:48:13 [01]        ...done
+170629 10:48:13 [01] Copying ./lepus/mysql_slow_query_review.frm to /home/backup/2017-06-29_10-47-44/lepus/mysql_slow_query_review.frm
+170629 10:48:13 [01]        ...done
+170629 10:48:13 [01] Copying ./lepus/admin_role_privilege.frm to /home/backup/2017-06-29_10-47-44/lepus/admin_role_privilege.frm
+170629 10:48:13 [01]        ...done
+170629 10:48:13 [01] Copying ./lepus/alarm_temp.frm to /home/backup/2017-06-29_10-47-44/lepus/alarm_temp.frm
+170629 10:48:13 [01]        ...done
+170629 10:48:13 [01] Copying ./lepus/mongodb_status.frm to /home/backup/2017-06-29_10-47-44/lepus/mongodb_status.frm
+170629 10:48:13 [01]        ...done
+170629 10:48:13 [01] Copying ./lepus/os_net_history.frm to /home/backup/2017-06-29_10-47-44/lepus/os_net_history.frm
+170629 10:48:13 [01]        ...done
+170629 10:48:13 [01] Copying ./lepus/alarm_history.frm to /home/backup/2017-06-29_10-47-44/lepus/alarm_history.frm
+170629 10:48:13 [01]        ...done
+170629 10:48:13 [01] Copying ./lepus/os_status.frm to /home/backup/2017-06-29_10-47-44/lepus/os_status.frm
+170629 10:48:13 [01]        ...done
+170629 10:48:13 [01] Copying ./lepus/redis_status_history.frm to /home/backup/2017-06-29_10-47-44/lepus/redis_status_history.frm
+170629 10:48:13 [01]        ...done
+170629 10:48:13 [01] Copying ./lepus/alarm.frm to /home/backup/2017-06-29_10-47-44/lepus/alarm.frm
+170629 10:48:13 [01]        ...done
+170629 10:48:13 [01] Copying ./lepus/oracle_status.frm to /home/backup/2017-06-29_10-47-44/lepus/oracle_status.frm
+170629 10:48:13 [01]        ...done
+170629 10:48:13 [01] Copying ./lepus/backup_record.frm to /home/backup/2017-06-29_10-47-44/lepus/backup_record.frm
+170629 10:48:13 [01]        ...done
+170629 10:48:13 [01] Copying ./lepus/redis_replication_history.frm to /home/backup/2017-06-29_10-47-44/lepus/redis_replication_history.frm
+170629 10:48:13 [01]        ...done
+170629 10:48:14 [01] Copying ./lepus/options.frm to /home/backup/2017-06-29_10-47-44/lepus/options.frm
+170629 10:48:14 [01]        ...done
+170629 10:48:14 [01] Copying ./lepus/os_disk_history.frm to /home/backup/2017-06-29_10-47-44/lepus/os_disk_history.frm
+170629 10:48:14 [01]        ...done
+170629 10:48:14 [01] Copying ./lepus/os_disk.frm to /home/backup/2017-06-29_10-47-44/lepus/os_disk.frm
+170629 10:48:14 [01]        ...done
+170629 10:48:14 [01] Copying ./lepus/oracle_tablespace.frm to /home/backup/2017-06-29_10-47-44/lepus/oracle_tablespace.frm
+170629 10:48:14 [01]        ...done
+170629 10:48:14 [01] Copying ./lepus/redis_replication.frm to /home/backup/2017-06-29_10-47-44/lepus/redis_replication.frm
+170629 10:48:14 [01]        ...done
+170629 10:48:14 [01] Copying ./lepus/admin_user_role.frm to /home/backup/2017-06-29_10-47-44/lepus/admin_user_role.frm
+170629 10:48:14 [01]        ...done
+170629 10:48:14 [01] Copying ./lepus/db_status.frm to /home/backup/2017-06-29_10-47-44/lepus/db_status.frm
+170629 10:48:14 [01]        ...done
+170629 10:48:14 [01] Copying ./lepus/db_servers_os.frm to /home/backup/2017-06-29_10-47-44/lepus/db_servers_os.frm
+170629 10:48:14 [01]        ...done
+170629 10:48:14 [01] Copying ./lepus/db_servers_oracle.frm to /home/backup/2017-06-29_10-47-44/lepus/db_servers_oracle.frm
+170629 10:48:14 [01]        ...done
+170629 10:48:14 [01] Copying ./lepus/db.opt to /home/backup/2017-06-29_10-47-44/lepus/db.opt
+170629 10:48:14 [01]        ...done
+170629 10:48:14 [01] Copying ./lepus/os_diskio_history.frm to /home/backup/2017-06-29_10-47-44/lepus/os_diskio_history.frm
+170629 10:48:14 [01]        ...done
+170629 10:48:14 [01] Copying ./lepus/mysql_replication.frm to /home/backup/2017-06-29_10-47-44/lepus/mysql_replication.frm
+170629 10:48:14 [01]        ...done
+170629 10:48:14 [01] Copying ./lepus/mysql_slow_query_sendmail_log.frm to /home/backup/2017-06-29_10-47-44/lepus/mysql_slow_query_sendmail_log.frm
+170629 10:48:14 [01]        ...done
+170629 10:48:14 [01] Copying ./lepus/django_migrations.frm to /home/backup/2017-06-29_10-47-44/lepus/django_migrations.frm
+170629 10:48:14 [01]        ...done
+170629 10:48:14 [01] Copying ./lepus/db_servers_redis.frm to /home/backup/2017-06-29_10-47-44/lepus/db_servers_redis.frm
+170629 10:48:14 [01]        ...done
+170629 10:48:14 [01] Copying ./lepus/mysql_connected.frm to /home/backup/2017-06-29_10-47-44/lepus/mysql_connected.frm
+170629 10:48:14 [01]        ...done
+170629 10:48:14 >> log scanned up to (1381248759)
+170629 10:48:14 [01] Copying ./lepus/os_net.frm to /home/backup/2017-06-29_10-47-44/lepus/os_net.frm
+170629 10:48:14 [01]        ...done
+170629 10:48:14 [01] Copying ./lepus/redis_status.frm to /home/backup/2017-06-29_10-47-44/lepus/redis_status.frm
+170629 10:48:14 [01]        ...done
+170629 10:48:14 [01] Copying ./lepus/mysql_processlist.frm to /home/backup/2017-06-29_10-47-44/lepus/mysql_processlist.frm
+170629 10:48:14 [01]        ...done
+170629 10:48:14 [01] Copying ./lepus/mysql_status.frm to /home/backup/2017-06-29_10-47-44/lepus/mysql_status.frm
+170629 10:48:14 [01]        ...done
+170629 10:48:14 [01] Copying ./lepus/os_diskio.frm to /home/backup/2017-06-29_10-47-44/lepus/os_diskio.frm
+170629 10:48:14 [01]        ...done
+170629 10:48:14 [01] Copying ./lepus/mysql_replication_history.frm to /home/backup/2017-06-29_10-47-44/lepus/mysql_replication_history.frm
+170629 10:48:14 [01]        ...done
+170629 10:48:14 [01] Copying ./lepus/db_servers_mongodb.frm to /home/backup/2017-06-29_10-47-44/lepus/db_servers_mongodb.frm
+170629 10:48:14 [01]        ...done
+170629 10:48:14 [01] Copying ./lepus/oracle_tablespace_history.frm to /home/backup/2017-06-29_10-47-44/lepus/oracle_tablespace_history.frm
+170629 10:48:14 [01]        ...done
+170629 10:48:14 [01] Copying ./lepus/mysql_bigtable_history.frm to /home/backup/2017-06-29_10-47-44/lepus/mysql_bigtable_history.frm
+170629 10:48:14 [01]        ...done
+170629 10:48:14 [01] Copying ./lepus/mysql_status_history.frm to /home/backup/2017-06-29_10-47-44/lepus/mysql_status_history.frm
+170629 10:48:14 [01]        ...done
+170629 10:48:14 [01] Copying ./lepus/mongodb_status_history.frm to /home/backup/2017-06-29_10-47-44/lepus/mongodb_status_history.frm
+170629 10:48:14 [01]        ...done
+170629 10:48:14 [01] Copying ./lepus/os_status_history.frm to /home/backup/2017-06-29_10-47-44/lepus/os_status_history.frm
+170629 10:48:14 [01]        ...done
+170629 10:48:14 [01] Copying ./lepus/admin_log.frm to /home/backup/2017-06-29_10-47-44/lepus/admin_log.frm
+170629 10:48:14 [01]        ...done
+170629 10:48:14 [01] Copying ./mysql/user.MYI to /home/backup/2017-06-29_10-47-44/mysql/user.MYI
+170629 10:48:14 [01]        ...done
+170629 10:48:14 [01] Copying ./mysql/help_topic.MYI to /home/backup/2017-06-29_10-47-44/mysql/help_topic.MYI
+170629 10:48:14 [01]        ...done
+170629 10:48:14 [01] Copying ./mysql/event.MYD to /home/backup/2017-06-29_10-47-44/mysql/event.MYD
+170629 10:48:14 [01]        ...done
+170629 10:48:14 [01] Copying ./mysql/procs_priv.frm to /home/backup/2017-06-29_10-47-44/mysql/procs_priv.frm
+170629 10:48:14 [01]        ...done
+170629 10:48:14 [01] Copying ./mysql/proxies_priv.MYI to /home/backup/2017-06-29_10-47-44/mysql/proxies_priv.MYI
+170629 10:48:14 [01]        ...done
+170629 10:48:14 [01] Copying ./mysql/time_zone.MYD to /home/backup/2017-06-29_10-47-44/mysql/time_zone.MYD
+170629 10:48:14 [01]        ...done
+170629 10:48:14 [01] Copying ./mysql/proxies_priv.MYD to /home/backup/2017-06-29_10-47-44/mysql/proxies_priv.MYD
+170629 10:48:14 [01]        ...done
+170629 10:48:14 [01] Copying ./mysql/help_keyword.frm to /home/backup/2017-06-29_10-47-44/mysql/help_keyword.frm
+170629 10:48:14 [01]        ...done
+170629 10:48:14 [01] Copying ./mysql/event.MYI to /home/backup/2017-06-29_10-47-44/mysql/event.MYI
+170629 10:48:14 [01]        ...done
+170629 10:48:14 [01] Copying ./mysql/time_zone_transition_type.MYD to /home/backup/2017-06-29_10-47-44/mysql/time_zone_transition_type.MYD
+170629 10:48:14 [01]        ...done
+170629 10:48:14 [01] Copying ./mysql/time_zone_transition.frm to /home/backup/2017-06-29_10-47-44/mysql/time_zone_transition.frm
+170629 10:48:14 [01]        ...done
+170629 10:48:14 [01] Copying ./mysql/help_topic.frm to /home/backup/2017-06-29_10-47-44/mysql/help_topic.frm
+170629 10:48:14 [01]        ...done
+170629 10:48:14 [01] Copying ./mysql/columns_priv.MYI to /home/backup/2017-06-29_10-47-44/mysql/columns_priv.MYI
+170629 10:48:14 [01]        ...done
+170629 10:48:14 [01] Copying ./mysql/plugin.frm to /home/backup/2017-06-29_10-47-44/mysql/plugin.frm
+170629 10:48:14 [01]        ...done
+170629 10:48:14 [01] Copying ./mysql/help_category.MYI to /home/backup/2017-06-29_10-47-44/mysql/help_category.MYI
+170629 10:48:14 [01]        ...done
+170629 10:48:14 [01] Copying ./mysql/general_log.CSV to /home/backup/2017-06-29_10-47-44/mysql/general_log.CSV
+170629 10:48:14 [01]        ...done
+170629 10:48:14 [01] Copying ./mysql/help_relation.MYD to /home/backup/2017-06-29_10-47-44/mysql/help_relation.MYD
+170629 10:48:14 [01]        ...done
+170629 10:48:14 [01] Copying ./mysql/user.frm to /home/backup/2017-06-29_10-47-44/mysql/user.frm
+170629 10:48:14 [01]        ...done
+170629 10:48:14 [01] Copying ./mysql/time_zone_name.frm to /home/backup/2017-06-29_10-47-44/mysql/time_zone_name.frm
+170629 10:48:14 [01]        ...done
+170629 10:48:14 [01] Copying ./mysql/time_zone_leap_second.frm to /home/backup/2017-06-29_10-47-44/mysql/time_zone_leap_second.frm
+170629 10:48:14 [01]        ...done
+170629 10:48:14 [01] Copying ./mysql/servers.MYI to /home/backup/2017-06-29_10-47-44/mysql/servers.MYI
+170629 10:48:14 [01]        ...done
+170629 10:48:14 [01] Copying ./mysql/time_zone_leap_second.MYD to /home/backup/2017-06-29_10-47-44/mysql/time_zone_leap_second.MYD
+170629 10:48:14 [01]        ...done
+170629 10:48:14 [01] Copying ./mysql/ndb_binlog_index.MYD to /home/backup/2017-06-29_10-47-44/mysql/ndb_binlog_index.MYD
+170629 10:48:14 [01]        ...done
+170629 10:48:14 [01] Copying ./mysql/columns_priv.frm to /home/backup/2017-06-29_10-47-44/mysql/columns_priv.frm
+170629 10:48:14 [01]        ...done
+170629 10:48:14 [01] Copying ./mysql/slave_master_info.frm to /home/backup/2017-06-29_10-47-44/mysql/slave_master_info.frm
+170629 10:48:14 [01]        ...done
+170629 10:48:14 [01] Copying ./mysql/time_zone_transition.MYI to /home/backup/2017-06-29_10-47-44/mysql/time_zone_transition.MYI
+170629 10:48:14 [01]        ...done
+170629 10:48:14 [01] Copying ./mysql/procs_priv.MYI to /home/backup/2017-06-29_10-47-44/mysql/procs_priv.MYI
+170629 10:48:14 [01]        ...done
+170629 10:48:14 [01] Copying ./mysql/time_zone_name.MYI to /home/backup/2017-06-29_10-47-44/mysql/time_zone_name.MYI
+170629 10:48:14 [01]        ...done
+170629 10:48:14 [01] Copying ./mysql/user.MYD to /home/backup/2017-06-29_10-47-44/mysql/user.MYD
+170629 10:48:14 [01]        ...done
+170629 10:48:14 [01] Copying ./mysql/time_zone_transition.MYD to /home/backup/2017-06-29_10-47-44/mysql/time_zone_transition.MYD
+170629 10:48:14 [01]        ...done
+170629 10:48:14 [01] Copying ./mysql/help_keyword.MYD to /home/backup/2017-06-29_10-47-44/mysql/help_keyword.MYD
+170629 10:48:14 [01]        ...done
+170629 10:48:14 [01] Copying ./mysql/help_topic.MYD to /home/backup/2017-06-29_10-47-44/mysql/help_topic.MYD
+170629 10:48:14 [01]        ...done
+170629 10:48:14 [01] Copying ./mysql/time_zone_leap_second.MYI to /home/backup/2017-06-29_10-47-44/mysql/time_zone_leap_second.MYI
+170629 10:48:14 [01]        ...done
+170629 10:48:14 [01] Copying ./mysql/slave_relay_log_info.frm to /home/backup/2017-06-29_10-47-44/mysql/slave_relay_log_info.frm
+170629 10:48:14 [01]        ...done
+170629 10:48:14 [01] Copying ./mysql/tables_priv.MYI to /home/backup/2017-06-29_10-47-44/mysql/tables_priv.MYI
+170629 10:48:14 [01]        ...done
+170629 10:48:14 [01] Copying ./mysql/slow_log.CSM to /home/backup/2017-06-29_10-47-44/mysql/slow_log.CSM
+170629 10:48:14 [01]        ...done
+170629 10:48:14 [01] Copying ./mysql/general_log.CSM to /home/backup/2017-06-29_10-47-44/mysql/general_log.CSM
+170629 10:48:14 [01]        ...done
+170629 10:48:14 [01] Copying ./mysql/func.frm to /home/backup/2017-06-29_10-47-44/mysql/func.frm
+170629 10:48:14 [01]        ...done
+170629 10:48:14 [01] Copying ./mysql/func.MYI to /home/backup/2017-06-29_10-47-44/mysql/func.MYI
+170629 10:48:14 [01]        ...done
+170629 10:48:14 [01] Copying ./mysql/columns_priv.MYD to /home/backup/2017-06-29_10-47-44/mysql/columns_priv.MYD
+170629 10:48:14 [01]        ...done
+170629 10:48:14 [01] Copying ./mysql/innodb_index_stats.frm to /home/backup/2017-06-29_10-47-44/mysql/innodb_index_stats.frm
+170629 10:48:14 [01]        ...done
+170629 10:48:14 [01] Copying ./mysql/time_zone_transition_type.MYI to /home/backup/2017-06-29_10-47-44/mysql/time_zone_transition_type.MYI
+170629 10:48:14 [01]        ...done
+170629 10:48:14 [01] Copying ./mysql/time_zone_transition_type.frm to /home/backup/2017-06-29_10-47-44/mysql/time_zone_transition_type.frm
+170629 10:48:14 [01]        ...done
+170629 10:48:14 [01] Copying ./mysql/time_zone_name.MYD to /home/backup/2017-06-29_10-47-44/mysql/time_zone_name.MYD
+170629 10:48:14 [01]        ...done
+170629 10:48:14 [01] Copying ./mysql/help_relation.frm to /home/backup/2017-06-29_10-47-44/mysql/help_relation.frm
+170629 10:48:14 [01]        ...done
+170629 10:48:14 [01] Copying ./mysql/func.MYD to /home/backup/2017-06-29_10-47-44/mysql/func.MYD
+170629 10:48:14 [01]        ...done
+170629 10:48:14 [01] Copying ./mysql/tables_priv.frm to /home/backup/2017-06-29_10-47-44/mysql/tables_priv.frm
+170629 10:48:14 [01]        ...done
+170629 10:48:14 [01] Copying ./mysql/procs_priv.MYD to /home/backup/2017-06-29_10-47-44/mysql/procs_priv.MYD
+170629 10:48:14 [01]        ...done
+170629 10:48:14 [01] Copying ./mysql/proxies_priv.frm to /home/backup/2017-06-29_10-47-44/mysql/proxies_priv.frm
+170629 10:48:14 [01]        ...done
+170629 10:48:14 [01] Copying ./mysql/slow_log.CSV to /home/backup/2017-06-29_10-47-44/mysql/slow_log.CSV
+170629 10:48:14 [01]        ...done
+170629 10:48:14 [01] Copying ./mysql/help_category.MYD to /home/backup/2017-06-29_10-47-44/mysql/help_category.MYD
+170629 10:48:14 [01]        ...done
+170629 10:48:14 [01] Copying ./mysql/time_zone.frm to /home/backup/2017-06-29_10-47-44/mysql/time_zone.frm
+170629 10:48:15 [01]        ...done
+170629 10:48:15 [01] Copying ./mysql/general_log.frm to /home/backup/2017-06-29_10-47-44/mysql/general_log.frm
+170629 10:48:15 [01]        ...done
+170629 10:48:15 [01] Copying ./mysql/servers.frm to /home/backup/2017-06-29_10-47-44/mysql/servers.frm
+170629 10:48:15 [01]        ...done
+170629 10:48:15 [01] Copying ./mysql/slow_log.frm to /home/backup/2017-06-29_10-47-44/mysql/slow_log.frm
+170629 10:48:15 [01]        ...done
+170629 10:48:15 [01] Copying ./mysql/help_relation.MYI to /home/backup/2017-06-29_10-47-44/mysql/help_relation.MYI
+170629 10:48:15 >> log scanned up to (1381248759)
+170629 10:48:15 [01]        ...done
+170629 10:48:15 [01] Copying ./mysql/time_zone.MYI to /home/backup/2017-06-29_10-47-44/mysql/time_zone.MYI
+170629 10:48:15 [01]        ...done
+170629 10:48:15 [01] Copying ./mysql/plugin.MYD to /home/backup/2017-06-29_10-47-44/mysql/plugin.MYD
+170629 10:48:15 [01]        ...done
+170629 10:48:15 [01] Copying ./mysql/proc.MYI to /home/backup/2017-06-29_10-47-44/mysql/proc.MYI
+170629 10:48:15 [01]        ...done
+170629 10:48:15 [01] Copying ./mysql/proc.frm to /home/backup/2017-06-29_10-47-44/mysql/proc.frm
+170629 10:48:15 [01]        ...done
+170629 10:48:15 [01] Copying ./mysql/plugin.MYI to /home/backup/2017-06-29_10-47-44/mysql/plugin.MYI
+170629 10:48:15 [01]        ...done
+170629 10:48:15 [01] Copying ./mysql/help_keyword.MYI to /home/backup/2017-06-29_10-47-44/mysql/help_keyword.MYI
+170629 10:48:15 [01]        ...done
+170629 10:48:15 [01] Copying ./mysql/tables_priv.MYD to /home/backup/2017-06-29_10-47-44/mysql/tables_priv.MYD
+170629 10:48:15 [01]        ...done
+170629 10:48:15 [01] Copying ./mysql/slave_worker_info.frm to /home/backup/2017-06-29_10-47-44/mysql/slave_worker_info.frm
+170629 10:48:15 [01]        ...done
+170629 10:48:15 [01] Copying ./mysql/db.frm to /home/backup/2017-06-29_10-47-44/mysql/db.frm
+170629 10:48:15 [01]        ...done
+170629 10:48:15 [01] Copying ./mysql/ndb_binlog_index.frm to /home/backup/2017-06-29_10-47-44/mysql/ndb_binlog_index.frm
+170629 10:48:15 [01]        ...done
+170629 10:48:15 [01] Copying ./mysql/help_category.frm to /home/backup/2017-06-29_10-47-44/mysql/help_category.frm
+170629 10:48:15 [01]        ...done
+170629 10:48:15 [01] Copying ./mysql/servers.MYD to /home/backup/2017-06-29_10-47-44/mysql/servers.MYD
+170629 10:48:15 [01]        ...done
+170629 10:48:15 [01] Copying ./mysql/proc.MYD to /home/backup/2017-06-29_10-47-44/mysql/proc.MYD
+170629 10:48:15 [01]        ...done
+170629 10:48:15 [01] Copying ./mysql/innodb_table_stats.frm to /home/backup/2017-06-29_10-47-44/mysql/innodb_table_stats.frm
+170629 10:48:15 [01]        ...done
+170629 10:48:15 [01] Copying ./mysql/ndb_binlog_index.MYI to /home/backup/2017-06-29_10-47-44/mysql/ndb_binlog_index.MYI
+170629 10:48:15 [01]        ...done
+170629 10:48:15 [01] Copying ./mysql/event.frm to /home/backup/2017-06-29_10-47-44/mysql/event.frm
+170629 10:48:15 [01]        ...done
+170629 10:48:15 [01] Copying ./mysql/db.MYI to /home/backup/2017-06-29_10-47-44/mysql/db.MYI
+170629 10:48:15 [01]        ...done
+170629 10:48:15 [01] Copying ./mysql/db.MYD to /home/backup/2017-06-29_10-47-44/mysql/db.MYD
+170629 10:48:15 [01]        ...done
+170629 10:48:15 [01] Copying ./performance_schema/socket_summary_by_instance.frm to /home/backup/2017-06-29_10-47-44/performance_schema/socket_summary_by_instance.frm
+170629 10:48:15 [01]        ...done
+170629 10:48:15 [01] Copying ./performance_schema/file_summary_by_event_name.frm to /home/backup/2017-06-29_10-47-44/performance_schema/file_summary_by_event_name.frm
+170629 10:48:15 [01]        ...done
+170629 10:48:15 [01] Copying ./performance_schema/threads.frm to /home/backup/2017-06-29_10-47-44/performance_schema/threads.frm
+170629 10:48:15 [01]        ...done
+170629 10:48:15 [01] Copying ./performance_schema/events_statements_history.frm to /home/backup/2017-06-29_10-47-44/performance_schema/events_statements_history.frm
+170629 10:48:15 [01]        ...done
+170629 10:48:15 [01] Copying ./performance_schema/events_waits_summary_global_by_event_name.frm to /home/backup/2017-06-29_10-47-44/performance_schema/events_waits_summary_global_by_event_name.frm
+170629 10:48:15 [01]        ...done
+170629 10:48:15 [01] Copying ./performance_schema/events_waits_summary_by_host_by_event_name.frm to /home/backup/2017-06-29_10-47-44/performance_schema/events_waits_summary_by_host_by_event_name.frm
+170629 10:48:15 [01]        ...done
+170629 10:48:15 [01] Copying ./performance_schema/events_statements_summary_by_thread_by_event_name.frm to /home/backup/2017-06-29_10-47-44/performance_schema/events_statements_summary_by_thread_by_event_name.frm
+170629 10:48:15 [01]        ...done
+170629 10:48:15 [01] Copying ./performance_schema/events_statements_summary_by_user_by_event_name.frm to /home/backup/2017-06-29_10-47-44/performance_schema/events_statements_summary_by_user_by_event_name.frm
+170629 10:48:15 [01]        ...done
+170629 10:48:15 [01] Copying ./performance_schema/table_lock_waits_summary_by_table.frm to /home/backup/2017-06-29_10-47-44/performance_schema/table_lock_waits_summary_by_table.frm
+170629 10:48:15 [01]        ...done
+170629 10:48:15 [01] Copying ./performance_schema/socket_instances.frm to /home/backup/2017-06-29_10-47-44/performance_schema/socket_instances.frm
+170629 10:48:15 [01]        ...done
+170629 10:48:15 [01] Copying ./performance_schema/session_account_connect_attrs.frm to /home/backup/2017-06-29_10-47-44/performance_schema/session_account_connect_attrs.frm
+170629 10:48:15 [01]        ...done
+170629 10:48:15 [01] Copying ./performance_schema/hosts.frm to /home/backup/2017-06-29_10-47-44/performance_schema/hosts.frm
+170629 10:48:15 [01]        ...done
+170629 10:48:15 [01] Copying ./performance_schema/session_connect_attrs.frm to /home/backup/2017-06-29_10-47-44/performance_schema/session_connect_attrs.frm
+170629 10:48:15 [01]        ...done
+170629 10:48:15 [01] Copying ./performance_schema/events_stages_summary_by_user_by_event_name.frm to /home/backup/2017-06-29_10-47-44/performance_schema/events_stages_summary_by_user_by_event_name.frm
+170629 10:48:15 [01]        ...done
+170629 10:48:15 [01] Copying ./performance_schema/table_io_waits_summary_by_index_usage.frm to /home/backup/2017-06-29_10-47-44/performance_schema/table_io_waits_summary_by_index_usage.frm
+170629 10:48:15 [01]        ...done
+170629 10:48:15 [01] Copying ./performance_schema/accounts.frm to /home/backup/2017-06-29_10-47-44/performance_schema/accounts.frm
+170629 10:48:15 [01]        ...done
+170629 10:48:15 [01] Copying ./performance_schema/events_statements_summary_global_by_event_name.frm to /home/backup/2017-06-29_10-47-44/performance_schema/events_statements_summary_global_by_event_name.frm
+170629 10:48:15 [01]        ...done
+170629 10:48:15 [01] Copying ./performance_schema/events_stages_summary_global_by_event_name.frm to /home/backup/2017-06-29_10-47-44/performance_schema/events_stages_summary_global_by_event_name.frm
+170629 10:48:15 [01]        ...done
+170629 10:48:15 [01] Copying ./performance_schema/setup_objects.frm to /home/backup/2017-06-29_10-47-44/performance_schema/setup_objects.frm
+170629 10:48:15 [01]        ...done
+170629 10:48:15 [01] Copying ./performance_schema/setup_actors.frm to /home/backup/2017-06-29_10-47-44/performance_schema/setup_actors.frm
+170629 10:48:15 [01]        ...done
+170629 10:48:15 [01] Copying ./performance_schema/events_waits_history.frm to /home/backup/2017-06-29_10-47-44/performance_schema/events_waits_history.frm
+170629 10:48:15 [01]        ...done
+170629 10:48:15 [01] Copying ./performance_schema/events_stages_summary_by_thread_by_event_name.frm to /home/backup/2017-06-29_10-47-44/performance_schema/events_stages_summary_by_thread_by_event_name.frm
+170629 10:48:15 [01]        ...done
+170629 10:48:15 [01] Copying ./performance_schema/file_instances.frm to /home/backup/2017-06-29_10-47-44/performance_schema/file_instances.frm
+170629 10:48:15 [01]        ...done
+170629 10:48:15 [01] Copying ./performance_schema/events_statements_summary_by_digest.frm to /home/backup/2017-06-29_10-47-44/performance_schema/events_statements_summary_by_digest.frm
+170629 10:48:15 [01]        ...done
+170629 10:48:15 [01] Copying ./performance_schema/events_waits_summary_by_user_by_event_name.frm to /home/backup/2017-06-29_10-47-44/performance_schema/events_waits_summary_by_user_by_event_name.frm
+170629 10:48:15 [01]        ...done
+170629 10:48:15 [01] Copying ./performance_schema/socket_summary_by_event_name.frm to /home/backup/2017-06-29_10-47-44/performance_schema/socket_summary_by_event_name.frm
+170629 10:48:15 [01]        ...done
+170629 10:48:15 [01] Copying ./performance_schema/users.frm to /home/backup/2017-06-29_10-47-44/performance_schema/users.frm
+170629 10:48:15 [01]        ...done
+170629 10:48:15 [01] Copying ./performance_schema/file_summary_by_instance.frm to /home/backup/2017-06-29_10-47-44/performance_schema/file_summary_by_instance.frm
+170629 10:48:15 [01]        ...done
+170629 10:48:15 [01] Copying ./performance_schema/events_statements_history_long.frm to /home/backup/2017-06-29_10-47-44/performance_schema/events_statements_history_long.frm
+170629 10:48:15 [01]        ...done
+170629 10:48:15 [01] Copying ./performance_schema/db.opt to /home/backup/2017-06-29_10-47-44/performance_schema/db.opt
+170629 10:48:15 [01]        ...done
+170629 10:48:15 [01] Copying ./performance_schema/events_stages_summary_by_host_by_event_name.frm to /home/backup/2017-06-29_10-47-44/performance_schema/events_stages_summary_by_host_by_event_name.frm
+170629 10:48:15 [01]        ...done
+170629 10:48:15 [01] Copying ./performance_schema/events_stages_current.frm to /home/backup/2017-06-29_10-47-44/performance_schema/events_stages_current.frm
+170629 10:48:15 [01]        ...done
+170629 10:48:15 [01] Copying ./performance_schema/events_waits_current.frm to /home/backup/2017-06-29_10-47-44/performance_schema/events_waits_current.frm
+170629 10:48:15 [01]        ...done
+170629 10:48:15 [01] Copying ./performance_schema/table_io_waits_summary_by_table.frm to /home/backup/2017-06-29_10-47-44/performance_schema/table_io_waits_summary_by_table.frm
+170629 10:48:15 [01]        ...done
+170629 10:48:15 [01] Copying ./performance_schema/mutex_instances.frm to /home/backup/2017-06-29_10-47-44/performance_schema/mutex_instances.frm
+170629 10:48:15 [01]        ...done
+170629 10:48:15 [01] Copying ./performance_schema/events_statements_current.frm to /home/backup/2017-06-29_10-47-44/performance_schema/events_statements_current.frm
+170629 10:48:15 [01]        ...done
+170629 10:48:15 [01] Copying ./performance_schema/host_cache.frm to /home/backup/2017-06-29_10-47-44/performance_schema/host_cache.frm
+170629 10:48:15 [01]        ...done
+170629 10:48:15 [01] Copying ./performance_schema/events_stages_history_long.frm to /home/backup/2017-06-29_10-47-44/performance_schema/events_stages_history_long.frm
+170629 10:48:15 [01]        ...done
+170629 10:48:15 [01] Copying ./performance_schema/events_waits_summary_by_instance.frm to /home/backup/2017-06-29_10-47-44/performance_schema/events_waits_summary_by_instance.frm
+170629 10:48:15 [01]        ...done
+170629 10:48:15 [01] Copying ./performance_schema/events_waits_summary_by_account_by_event_name.frm to /home/backup/2017-06-29_10-47-44/performance_schema/events_waits_summary_by_account_by_event_name.frm
+170629 10:48:15 [01]        ...done
+170629 10:48:15 [01] Copying ./performance_schema/rwlock_instances.frm to /home/backup/2017-06-29_10-47-44/performance_schema/rwlock_instances.frm
+170629 10:48:15 [01]        ...done
+170629 10:48:15 [01] Copying ./performance_schema/events_waits_summary_by_thread_by_event_name.frm to /home/backup/2017-06-29_10-47-44/performance_schema/events_waits_summary_by_thread_by_event_name.frm
+170629 10:48:15 [01]        ...done
+170629 10:48:15 [01] Copying ./performance_schema/events_stages_summary_by_account_by_event_name.frm to /home/backup/2017-06-29_10-47-44/performance_schema/events_stages_summary_by_account_by_event_name.frm
+170629 10:48:15 [01]        ...done
+170629 10:48:15 [01] Copying ./performance_schema/objects_summary_global_by_type.frm to /home/backup/2017-06-29_10-47-44/performance_schema/objects_summary_global_by_type.frm
+170629 10:48:15 [01]        ...done
+170629 10:48:15 [01] Copying ./performance_schema/events_statements_summary_by_account_by_event_name.frm to /home/backup/2017-06-29_10-47-44/performance_schema/events_statements_summary_by_account_by_event_name.frm
+170629 10:48:15 [01]        ...done
+170629 10:48:15 [01] Copying ./performance_schema/events_statements_summary_by_host_by_event_name.frm to /home/backup/2017-06-29_10-47-44/performance_schema/events_statements_summary_by_host_by_event_name.frm
+170629 10:48:15 [01]        ...done
+170629 10:48:15 [01] Copying ./performance_schema/setup_instruments.frm to /home/backup/2017-06-29_10-47-44/performance_schema/setup_instruments.frm
+170629 10:48:15 [01]        ...done
+170629 10:48:15 [01] Copying ./performance_schema/setup_consumers.frm to /home/backup/2017-06-29_10-47-44/performance_schema/setup_consumers.frm
+170629 10:48:15 [01]        ...done
+170629 10:48:15 [01] Copying ./performance_schema/setup_timers.frm to /home/backup/2017-06-29_10-47-44/performance_schema/setup_timers.frm
+170629 10:48:15 [01]        ...done
+170629 10:48:15 [01] Copying ./performance_schema/performance_timers.frm to /home/backup/2017-06-29_10-47-44/performance_schema/performance_timers.frm
+170629 10:48:15 [01]        ...done
+170629 10:48:15 [01] Copying ./performance_schema/events_waits_history_long.frm to /home/backup/2017-06-29_10-47-44/performance_schema/events_waits_history_long.frm
+170629 10:48:15 [01]        ...done
+170629 10:48:15 [01] Copying ./performance_schema/events_stages_history.frm to /home/backup/2017-06-29_10-47-44/performance_schema/events_stages_history.frm
+170629 10:48:15 [01]        ...done
+170629 10:48:15 [01] Copying ./performance_schema/cond_instances.frm to /home/backup/2017-06-29_10-47-44/performance_schema/cond_instances.frm
+170629 10:48:15 [01]        ...done
+170629 10:48:15 [01] Copying ./bigdata/admin_menu_copy2.frm to /home/backup/2017-06-29_10-47-44/bigdata/admin_menu_copy2.frm
+170629 10:48:15 [01]        ...done
+170629 10:48:15 [01] Copying ./bigdata/admin_menu.frm to /home/backup/2017-06-29_10-47-44/bigdata/admin_menu.frm
+170629 10:48:15 [01]        ...done
+170629 10:48:15 [01] Copying ./bigdata/admin_user.frm to /home/backup/2017-06-29_10-47-44/bigdata/admin_user.frm
+170629 10:48:15 [01]        ...done
+170629 10:48:15 [01] Copying ./bigdata/admin_menu_copy.frm to /home/backup/2017-06-29_10-47-44/bigdata/admin_menu_copy.frm
+170629 10:48:15 [01]        ...done
+170629 10:48:15 [01] Copying ./bigdata/db.opt to /home/backup/2017-06-29_10-47-44/bigdata/db.opt
+170629 10:48:15 [01]        ...done
+170629 10:48:16 [01] Copying ./bigdata/admin_menu_copy3.frm to /home/backup/2017-06-29_10-47-44/bigdata/admin_menu_copy3.frm
+170629 10:48:16 [01]        ...done
+170629 10:48:16 [01] Copying ./bigdata/admin_navigation.frm to /home/backup/2017-06-29_10-47-44/bigdata/admin_navigation.frm
+170629 10:48:16 [01]        ...done
+170629 10:48:16 [01] Copying ./bigdata/admin_menu_copy4.frm to /home/backup/2017-06-29_10-47-44/bigdata/admin_menu_copy4.frm
+170629 10:48:16 [01]        ...done
+170629 10:48:16 [01] Copying ./bigdata/admin_menu_pid.frm to /home/backup/2017-06-29_10-47-44/bigdata/admin_menu_pid.frm
+170629 10:48:16 [01]        ...done
+170629 10:48:16 [01] Copying ./test/test1.frm to /home/backup/2017-06-29_10-47-44/test/test1.frm
+170629 10:48:16 [01]        ...done
+170629 10:48:16 [01] Copying ./test/test.frm to /home/backup/2017-06-29_10-47-44/test/test.frm
+170629 10:48:16 [01]        ...done
+170629 10:48:16 [01] Copying ./clickWeight/clickWeight.frm to /home/backup/2017-06-29_10-47-44/clickWeight/clickWeight.frm
+170629 10:48:16 [01]        ...done
+170629 10:48:16 [01] Copying ./clickWeight/query_handle_weight.frm to /home/backup/2017-06-29_10-47-44/clickWeight/query_handle_weight.frm
+170629 10:48:16 [01]        ...done
+170629 10:48:16 [01] Copying ./clickWeight/extsearch_chain_names.frm to /home/backup/2017-06-29_10-47-44/clickWeight/extsearch_chain_names.frm
+170629 10:48:16 [01]        ...done
+170629 10:48:16 [01] Copying ./clickWeight/clickWeight_incre.frm to /home/backup/2017-06-29_10-47-44/clickWeight/clickWeight_incre.frm
+170629 10:48:16 [01]        ...done
+170629 10:48:16 [01] Copying ./clickWeight/extsearch_type.frm to /home/backup/2017-06-29_10-47-44/clickWeight/extsearch_type.frm
+170629 10:48:16 [01]        ...done
+170629 10:48:16 [01] Copying ./clickWeight/extsearch_cookedfood.frm to /home/backup/2017-06-29_10-47-44/clickWeight/extsearch_cookedfood.frm
+170629 10:48:16 [01]        ...done
+170629 10:48:16 [01] Copying ./clickWeight/query_handle_weight_old.frm to /home/backup/2017-06-29_10-47-44/clickWeight/query_handle_weight_old.frm
+170629 10:48:16 [01]        ...done
+170629 10:48:16 [01] Copying ./clickWeight/query_handle_weight_bak.frm to /home/backup/2017-06-29_10-47-44/clickWeight/query_handle_weight_bak.frm
+170629 10:48:16 [01]        ...done
+170629 10:48:16 [01] Copying ./clickWeight/clickWeight_log.frm to /home/backup/2017-06-29_10-47-44/clickWeight/clickWeight_log.frm
+170629 10:48:16 [01]        ...done
+170629 10:48:16 [01] Copying ./clickWeight/extsearch_synonym.frm to /home/backup/2017-06-29_10-47-44/clickWeight/extsearch_synonym.frm
+170629 10:48:16 [01]        ...done
+170629 10:48:16 [01] Copying ./clickWeight/landmark.frm to /home/backup/2017-06-29_10-47-44/clickWeight/landmark.frm
+170629 10:48:16 [01]        ...done
+170629 10:48:16 [01] Copying ./clickWeight/TRIGGER_CLICKWEIGHT_INSERT.TRN to /home/backup/2017-06-29_10-47-44/clickWeight/TRIGGER_CLICKWEIGHT_INSERT.TRN
+170629 10:48:16 [01]        ...done
+170629 10:48:16 >> log scanned up to (1381248759)
+170629 10:48:16 [01] Copying ./clickWeight/extsearch_type_synonym.frm to /home/backup/2017-06-29_10-47-44/clickWeight/extsearch_type_synonym.frm
+170629 10:48:16 [01]        ...done
+170629 10:48:16 [01] Copying ./clickWeight/clickWeight.TRG to /home/backup/2017-06-29_10-47-44/clickWeight/clickWeight.TRG
+170629 10:48:16 [01]        ...done
+170629 10:48:16 [01] Copying ./clickWeight/db.opt to /home/backup/2017-06-29_10-47-44/clickWeight/db.opt
+170629 10:48:16 [01]        ...done
+170629 10:48:16 [01] Copying ./clickWeight/area.frm to /home/backup/2017-06-29_10-47-44/clickWeight/area.frm
+170629 10:48:16 [01]        ...done
+170629 10:48:16 [01] Copying ./clickWeight/correct.frm to /home/backup/2017-06-29_10-47-44/clickWeight/correct.frm
+170629 10:48:16 [01]        ...done
+170629 10:48:16 [01] Copying ./clickWeight/extend_query.frm to /home/backup/2017-06-29_10-47-44/clickWeight/extend_query.frm
+170629 10:48:16 [01]        ...done
+170629 10:48:16 [01] Copying ./clickWeight/TRIGGER_CLICKWEIGHT_UPDATE.TRN to /home/backup/2017-06-29_10-47-44/clickWeight/TRIGGER_CLICKWEIGHT_UPDATE.TRN
+170629 10:48:16 [01]        ...done
+170629 10:48:16 [01] Copying ./clickWeight/TRIGGER_CLICKWEIGHT_DELETE.TRN to /home/backup/2017-06-29_10-47-44/clickWeight/TRIGGER_CLICKWEIGHT_DELETE.TRN
+170629 10:48:16 [01]        ...done
+170629 10:48:16 Finished backing up non-InnoDB tables and files
+170629 10:48:16 [00] Writing xtrabackup_binlog_info
+170629 10:48:16 [00]        ...done
+170629 10:48:16 Executing FLUSH NO_WRITE_TO_BINLOG ENGINE LOGS...
+xtrabackup: The latest check point (for incremental): '1381248759'
+xtrabackup: Stopping log copying thread.
+.170629 10:48:16 >> log scanned up to (1381248759)
+
+170629 10:48:16 Executing UNLOCK TABLES
+170629 10:48:16 All tables unlocked
+170629 10:48:16 Backup created in directory '/home/backup/2017-06-29_10-47-44/'
+MySQL binlog position: filename 'binlog.000009', position '11820', GTID of the last change '588859c7-5724-11e7-906e-080027359285:1-10104'
+170629 10:48:16 [00] Writing backup-my.cnf
+170629 10:48:16 [00]        ...done
+170629 10:48:16 [00] Writing xtrabackup_info
+170629 10:48:16 [00]        ...done
+xtrabackup: Transaction log of lsn (1381248759) to (1381248759) was copied.
+170629 10:48:16 completed OK!

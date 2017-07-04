@@ -66,11 +66,22 @@ def grant_user2(request):
                 ranges=request.GET.get('range')
 		sql="grant %s on %s to '%s'@'%s' identified by '%s';"%(priv,objects,user,ranges,passwd)
 		execone="python /zdh/zdh/app_zdh/include/mysql_fun.py \\\"%s\\\" \\\"%s\\\" \\\"%s\\\" \\\"%s\\\" \\\"%s\\\""%(host,port,username,password,sql)
-		os.system("/usr/bin/ansible \"%s\" -m shell -a \"%s\""%(host,execone))
+		os.system("/usr/bin/ansible \"%s\" -m shell -a \"%s\">>/zdh/zdh/app_zdh/log/grant.log"%(host,execone))
 		exectwo="python /zdh/zdh/app_zdh/include/mysql_fun.py \\\"%s\\\" \\\"%s\\\" \\\"%s\\\" \\\"%s\\\" \\\"flush privileges\\\""%(host,port,username,password)
-		os.system("/usr/bin/ansible \"%s\" -m shell -a \"%s\""%(host,exectwo))
+		os.system("/usr/bin/ansible \"%s\" -m shell -a \"%s\">>/zdh/zdh/app_zdh/log/grant.log"%(host,exectwo))
 		return render(request,'success.html')
 	else :
 		return host
+
+def backup(request):
+	return render(request,'backup.html')
+
+def full_backup(request):
+	host=request.GET.get('host')
+	#exece="/usr/bin/ansible \"%s\" -m shell -a \"bash /zdh/zdh/app_zdh/include/full_backup.sh\""%(host)
+	os.system("/usr/bin/ansible %s -m shell -a \"bash /zdh/zdh/app_zdh/include/full_backup.sh\">>/zdh/zdh/app_zdh/log/backup.log"%(host))
+	
+	return render(request,'backup_finish.html')
+
 
 # Create your views here
